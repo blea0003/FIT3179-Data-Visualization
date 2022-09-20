@@ -16,7 +16,7 @@
         },
         {
             "data": {
-                "url": "https://github.com/blea0003/FIT3179-Week-9-Homework/blob/main/js/ne_50m_admin_0_countries.json",
+                "url": "https://raw.githubusercontent.com/blea0003/FIT3179-Week-9-Homework/main/js/ne_50m_admin_0_countries.json",
                 "format": {"type": "topojson", "feature": "ne_50m_admin_0_countries"}
             },     
             "transform": [
@@ -48,7 +48,7 @@
         },
         {
             "data": {
-                "url": "https://github.com/blea0003/FIT3179-Week-9-Homework/blob/main/js/ne_50m_urban_areas.json",
+                "url": "https://raw.githubusercontent.com/blea0003/FIT3179-Week-9-Homework/main/js/ne_50m_urban_areas.json",
                 "format": {"type": "topojson", "feature": "ne_50m_urban_areas"}
             },      
             "mark": {
