@@ -24,7 +24,7 @@
                     "lookup": "properties.ISO_A3",
                     "from": {
                         "data":{
-                            "url": "../data/Global Population Density (WorldBank).csv"
+                            "url": "https://github.com/blea0003/FIT3179-Week-9-Homework/blob/main/data/Global%20Population%20Density%20(WorldBank).csv"
                         },
                         "key": "Country Code",
                         "fields": ["2020"]
