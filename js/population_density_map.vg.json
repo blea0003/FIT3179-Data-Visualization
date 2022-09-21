@@ -1,6 +1,9 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "title": "Population Density of Each Country (2020)",
+    "title": {
+        "text": "Population Density of Each Country (2020)",
+        "fontSize": 20
+    },
     "projection": {"type":"equalEarth"},
     "width": 1280,
     "height": 720,
