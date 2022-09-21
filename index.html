@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <!-- Import Vega & Vega-Lite (does not have to be from CDN) -->
   <script src="https://cdn.jsdelivr.net/npm/vega@5.20.2"></script>
@@ -9,19 +10,26 @@
   <!-- CSS file -->
   <link rel="stylesheet" type="text/css" href="css/styles.css" media="all">
 
-
 </head>
 <body>
-  
-<div id="population_density_map"></div>
+  <div id="population_density_map"></div>
 
-<script type="text/javascript">
+  <ul>
+    <li>
+      Although my Assignment 2 domain has to do with population, it won't be global. This map is what I used for preliminary exploration.
+    </li><br>
+    <li>
+      Chloropleth map has been normalized using logarithmic scale.
+    </li>
+  </ul>
 
-  var spec2 = "js/population_density_map.vg.json";
-  vegaEmbed('#population_density_map', spec2).then(function(result) {
-    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
-  }).catch(console.error);
-</script>
+  <script type="text/javascript">
+
+    var spec2 = "js/population_density_map.vg.json";
+    vegaEmbed('#population_density_map', spec2).then(function(result) {
+      // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+    }).catch(console.error);
+  </script>
 
 </body>
 </html>
