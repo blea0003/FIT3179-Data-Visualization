@@ -3,6 +3,7 @@ ul {
 }
 
 #population_density_map {
+	top: 20px;
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
