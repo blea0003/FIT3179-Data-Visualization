@@ -1,10 +1,19 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "title": "Population Density (people/sq.km)",
-    "width":800,
-    "height":400,
+    "title": "Population Density of Each Country (2020)",
     "projection": {"type":"equalEarth"},
+    "width": 1280,
+    "height": 720,
     "layer": [
+        {
+            "data": {
+                "url": "https://raw.githubusercontent.com/blea0003/FIT3179-Week-9-Homework/main/js/ne_50m_ocean.json",
+                "format": {"type": "topojson", "feature": "ne_50m_ocean"}
+            },      
+            "mark": {
+                "type": "geoshape"
+            }
+        },
         {
             "data": {
                 "graticule": {"step": [30,30]}
@@ -38,23 +47,17 @@
                 "color":{
                     "field": "2020",
                     "type": "quantitative",
-                    "scale": {"type": "log"}
+                    "scale": {
+                        "type": "log",
+                        "scheme": "yelloworangered"
+                    },
+                    "legend": {"title": "People / km^2"}
                 },
                 "tooltip": [
-                    {"field": "properties.NAME", "type":"nominal", "title": "Name"},
-                    {"field": "2020", "type": "quantitative", "title": "Density"}
+                    {"field": "properties.NAME", "type":"nominal", "title": "Country Name"},
+                    {"field": "2020", "type": "quantitative", "title": "People / km^2"}
                 ]
             }
-        },
-        {
-            "data": {
-                "url": "https://raw.githubusercontent.com/blea0003/FIT3179-Week-9-Homework/main/js/ne_50m_urban_areas.json",
-                "format": {"type": "topojson", "feature": "ne_50m_urban_areas"}
-            },      
-            "mark": {
-                "type": "geoshape",
-                "fill": "red"
-            }
-        }       
+        }      
     ]
 }
